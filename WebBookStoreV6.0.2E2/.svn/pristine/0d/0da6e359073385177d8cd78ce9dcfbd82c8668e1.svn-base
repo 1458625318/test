@@ -1,0 +1,137 @@
+@CHARSET "UTF-8";
+
+@IMPORT url("../../../module/customer_page/customer_page.css");
+
+@IMPORT url("../../../module/customer_frame/customer_frame.css");
+
+@IMPORT url("../../my_account.css");
+
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	font-family: "新宋体";
+	background-color: #FFEFDE;
+}
+
+body>div {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+/** 我的账户信息 */
+.page-middle>.page-content>.my-account-info {
+	line-height: 60px;
+	padding-top: 20px;
+	border: 0px solid #000000;
+}
+
+/** 我的账户信息 - 账户余额 */
+.page-middle>.page-content>.my-account-info>.row>.item.balance>.label {
+	height: 60px;
+	line-height: 70px;
+	font-size: 24px;
+	color: blue;
+	border: 0px solid #000000;
+}
+
+/** 我的账户信息 - 账户余额 */
+.page-middle>.page-content>.my-account-info>.row>.item.balance>.value {
+	height: 60px;
+	line-height: 60px;
+	font-size: 48px;
+	font-style: italic;
+	color: red;
+	border: 0px solid #000000;
+}
+
+/** 我的账户信息 - 冻结余额 */
+.page-middle>.page-content>.my-account-info>.row>.item.freezing-amount>.label
+	{
+	height: 60px;
+	line-height: 70px;
+	margin-left: 40px;
+	font-size: 14px;
+	color: blue;
+	font-weight: bold;
+	border: 0px solid #000000;
+}
+
+/** 我的账户信息 - 冻结余额 */
+.page-middle>.page-content>.my-account-info>.row>.item.freezing-amount>.value
+	{
+	height: 60px;
+	line-height: 70px;
+	font-size: 14px;
+	color: red;
+	font-weight: bold;
+	border: 0px solid #000000;
+}
+
+/** 我的账户信息 - 线性样式 */
+.page-middle>.page-content>.my-account-info>.row.line {
+	border-top: 2px dotted #000000;
+	border-bottom: 2px dotted #000000;
+}
+
+/** 我的账户信息 - 去充值 */
+.page-middle>.page-content>.my-account-info>.row>.item.to-recharge>.label
+	{
+	height: 60px;
+	line-height: 110px;
+	font-size: 14px;
+	color: black;
+	font-weight: bold;
+	border: 0px solid #000000;
+}
+
+/** 我的账户信息 - 去充值 */
+.page-middle>.page-content>.my-account-info>.row>.item.to-recharge>a.link
+	{
+	position:static;
+	display:block;
+	float:left;
+	width: 165px;
+	height: 68px;
+	padding: 4px;
+	background-image: url("images/to_recharge.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/** 我的账户信息 - 去充值 */
+.page-middle>.page-content>.my-account-info>.row>.item.to-recharge>a.link:HOVER
+	{
+	padding: 3px;
+	border: 1px solid black;
+}
+
+/** 对话框：去充值录入金额 */
+form[name=frmRecharge].to-recharge-form .row>.label {
+	height: 28px;
+	line-height: 35px;
+}
+
+/** 对话框：去充值录入金额 */
+form[name=frmRecharge].to-recharge-form .row>.editable>input[type=text] {
+	width: 150px;
+	height: 28px;
+	line-height: 28px;
+	font-size: 16px;
+	color: red;
+	font-weight: bold;
+	border: 1px solid #000000;
+}
+
+/** 对话框：去充值录入金额 */
+form[name=frmRecharge].to-recharge-form .row>.readonly {
+	height: 28px;
+	line-height: 35px;
+}
+
+/** 我的交易记录 */
+.page-middle>.page-content>.my-trade-record {
+	margin-top: 20px;
+}

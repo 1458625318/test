@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+.dialog-panel.show-book>.unit+.unit {
+	margin-left: 20px;
+}
+
+.dialog-panel.show-book>.unit>.row>.label {
+	width: 120px;
+}

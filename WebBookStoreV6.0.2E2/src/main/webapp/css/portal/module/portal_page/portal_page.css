@@ -1,0 +1,384 @@
+@CHARSET "UTF-8";
+
+@IMPORT url("../show_customer/show_customer.css");
+
+.page-head {
+	
+}
+
+.page-head>.announcement {
+	font-size: 12px;
+	line-height: 36px;
+	color: #DFA508;
+}
+
+.page-head>.announcement>.bg {
+	height: 50px;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-position: left top;
+	background-repeat: repeat-x;
+	background-image: url("images/notice_bg.png");
+	background-color: #FFFFFF;
+}
+
+.page-head>.announcement>.bg>.content {
+	height: 36px;
+	background-color: #FBEED0;
+	border: 2px solid #C68400;
+}
+
+.page-head>.announcement>.bg>.content>.icon {
+	float: left;
+	width: 80px;
+	height: 36px;
+	background-image: url("images/icon.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-head>.announcement>.bg>.content>.text {
+	float: left;
+	line-height: 36px;
+	font-size: 12px;
+	color: #000000;
+}
+
+.page-head>.head {
+	background-color: #FFFFFF;
+}
+
+.page-head>.head>.logo {
+	float: left;
+}
+
+.page-head>.head>.seacher {
+	float: left;
+	margin-left: 50px;
+	border: 0px solid #000000;
+}
+
+.page-head>.head>.seacher>.form {
+	padding-top: 8px;
+}
+
+.page-head>.head>.seacher>.form>.key-word {
+	float: left;
+	height: 29px;
+	width: 360px;
+	border: 2px solid #2C2198;
+	border-right: 0px;
+}
+
+.page-head>.head>.seacher>.form>.search {
+	float: left;
+	width: 80px;
+	height: 35px;
+	background-image: url("images/search_button.png");
+	background-position: left top;
+	background-repeat: no-repeat;
+	border: 0px;
+}
+
+.page-head>.head>.seacher>.link {
+	
+}
+
+.page-head>.head>.seacher>.link .unit {
+	font-size: 12px;
+	color: #666666;
+}
+
+.page-head>.head>.seacher>.link .unit.advanced {
+	width: 80px;
+	text-align: center;
+}
+
+.page-head>.head>.seacher>.link .unit a {
+	color: #666666;
+	text-decoration: none;
+}
+
+.page-head>.head>.seacher>.link .unit a:HOVER {
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+.page-head>.head>.seacher>.link .unit>.label {
+	font-size: 12px;
+}
+
+.page-head>.head>.seacher>.link .unit>.value {
+	font-size: 12px;
+}
+
+.page-head>.head>.shopping-cart {
+	float: left;
+	width: 134px;
+	height: 33px;
+	line-height: 33px;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 70px;
+	background-image: url("images/shopping_cart_bg.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: 0px solid #000000;
+}
+
+.page-head>.head>.shopping-cart>span {
+	font-size: 12px;
+	color: #000000;
+}
+
+.page-head>.head>.shopping-cart>span.red {
+	color: red;
+}
+
+.page-head>.navigation {
+	background-color: #FFFFFF;
+	border: 0px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+.page-head>.navigation>ul {
+	margin: 0px;
+	padding: 0px;
+	height: 50px;
+	list-style-type: none;
+	border: 0px solid #000000;
+}
+
+.page-head>.navigation>ul>li {
+	float: left;
+	height: 50px;
+	border: 0px solid #000000;
+}
+
+.page-head>.navigation>ul>li.portal.home-page {
+	width: 80px;
+	margin-left: 200px;
+	background-image: url("images/home_page.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-head>.navigation>ul>li.portal.home-page:HOVER {
+	width: 80px;
+	background-image: url("images/home_page.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-head>.navigation>ul>li.portal.sort-and-search {
+	width: 140px;
+	background-image: url("images/sort_and_search1.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-head>.navigation>ul>li.portal.sort-and-search:HOVER {
+	width: 200px;
+	background-image: url("images/sort_and_search.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-head>.navigation>ul>li.portal.new-book {
+	width: 47px;
+	background-image: url("images/new_book1.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-head>.navigation>ul>li.portal.new-book:HOVER {
+	width: 81px;
+	background-image: url("images/new_book.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-head>.navigation>ul>li.portal.cheap-book {
+	width: 65px;
+	background-image: url("images/cheap_book1.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-head>.navigation>ul>li.portal.cheap-book:HOVER {
+	width: 106px;
+	background-image: url("images/cheap_book.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-head>.navigation>ul>li.portal.sale-book {
+	width: 47px;
+	background-image: url("images/sale_book1.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-head>.navigation>ul>li.portal.sale-book:HOVER {
+	width: 81px;
+	background-image: url("images/sale_book.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-head>.navigation>ul>li.portal.bestseller {
+	width: 100px;
+	background-image: url("images/bestseller1.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-head>.navigation>ul>li.portal.bestseller:HOVER {
+	width: 154px;
+	background-image: url("images/bestseller.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-head>.navigation>ul>li.portal.comment {
+	width: 47px;
+	background-image: url("images/comment1.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-head>.navigation>ul>li.portal.comment:HOVER {
+	width: 81px;
+	background-image: url("images/comment.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-head>.navigation>ul>li.portal {
+	margin-left: 20px;
+}
+
+.page-head>.navigation>ul>li a {
+	position: static;
+	display: block;
+	height: 50px;
+}
+
+.page-middle {
+	background-color: #FFFFFF;
+}
+
+.page-footer {
+	background-color: #FFFFFF;
+}
+
+.page-footer>.help-navigation {
+	height: 96px;
+	background-image: url("images/help_navigation_bg.png");
+	background-position: left top;
+	background-repeat: repeat-x;
+}
+
+.page-footer>.help-navigation>.unit {
+	line-height: 20px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.page-footer>.help-navigation>.unit.work-telephone-time {
+	width: 267px;
+	height: 93px;
+	background-image: url("images/work_telephone_time.png");
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+.page-footer>.help-navigation>.unit.separate-line {
+	width: 12px;
+	height: 93px;
+	background-image: url("images/help_navigation_item_bg.png");
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+.page-footer>.help-navigation>.unit.links {
+	
+}
+
+.page-footer>.help-navigation>.unit.links>.row {
+	padding: 0px;
+}
+
+.page-footer>.help-navigation>.unit.links>.row.title {
+	position: static;
+	display: block;
+	height: 25px;
+	line-height: 28px;
+	color: #000000;
+	font-family: "黑体";
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: #FFFFFF;
+	border-bottom: 0px solid #0E54B3;
+	clear: both;
+}
+
+.page-footer>.help-navigation>.unit.links>.row>a.link {
+	color: #666666;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.page-footer>.help-navigation>.unit.links>.row>a.link:HOVER {
+	color: red;
+}
+
+.page-footer>.footer {
+	height: 56px;
+	font-size: 12px;
+	background-image: url("images/page_footer_bg.png");
+	background-position: left top;
+	background-repeat: repeat-x;
+}
+
+.page-footer>.footer.row {
+	padding: 0px;
+}
+
+.page-footer>.footer>.unit.icon {
+	width: 24px;
+	height: 55px;
+	margin-left: 10px;
+	margin-top: 1px;
+	background-image: url("images/page_footer_icon.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-footer>.footer>.unit.security-record {
+	padding-top: 5px;
+	padding-left: 5px;
+	line-height: 18px;
+}
+
+.page-footer>.footer>.unit.r1 {
+	padding-top: 5px;
+	padding-right: 10px;
+	line-height: 18px;
+}
+
+.page-footer>.footer>.unit.r1>.row {
+	text-align: right;
+}
+
+.page-footer>.footer>.unit.r1>.row.navigation>a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.page-footer>.footer>.unit.r1>.row.navigation>a:HOVER {
+	color: #FF0000;
+}

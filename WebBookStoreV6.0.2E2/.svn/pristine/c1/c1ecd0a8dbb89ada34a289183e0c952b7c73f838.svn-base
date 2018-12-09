@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd  
+  	http://www.springframework.org/schema/context
+  	http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+	<!-- 启用spring mvc 注解 -->
+	<mvc:annotation-driven />
+
+	<!-- 扫描controller包生成Controller Bean -->
+	<context:component-scan base-package="cn.jbit.webbs.controller" />
+
+	<!-- 拦截器配置 -->
+	<mvc:interceptors>
+
+		<!-- 客户平台安全验证 -->
+		<mvc:interceptor>
+			<mvc:mapping path="/customer/**" />
+			<ref bean="customer.verifyLoginInterceptor" />
+		</mvc:interceptor>
+
+		<!-- 管理平台安全验证 -->
+		<mvc:interceptor>
+			<mvc:mapping path="/admin/**" />
+			<ref bean="admin.verifyLoginInterceptor" />
+		</mvc:interceptor>
+
+		<!-- 管理平台权限验证 -->
+		<mvc:interceptor>
+			<mvc:mapping path="/admin/**" />
+			<ref bean="admin.verifyAuthorityInterceptor" />
+		</mvc:interceptor>
+
+	</mvc:interceptors>
+
+	<!-- 完成请求和注解POJO的映射 -->
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<!-- 把ByteArray加在Json前面 -->
+				<bean
+					class="org.springframework.http.converter.ByteArrayHttpMessageConverter" />
+				<bean id="jsonHttpMessageConverter"
+					class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+					<property name="supportedMediaTypes">
+						<list>
+							<value>application/json;charset=utf-8</value>
+							<value>text/plain;charset=utf-8</value>
+							<value>text/html;charset=utf-8</value>
+						</list>
+					</property>
+				</bean>
+			</list>
+		</property>
+		<!-- <property name="webBindingInitializer"> <bean class="org.springframework.web.bind.support.ConfigurableWebBindingInitializer"> 
+			<property name="conversionService"> <bean class="org.springframework.format.support.FormattingConversionServiceFactoryBean"></bean> 
+			</property> </bean> </property> -->
+	</bean>
+
+	<!-- 视图转换器 -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/html/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+</beans>

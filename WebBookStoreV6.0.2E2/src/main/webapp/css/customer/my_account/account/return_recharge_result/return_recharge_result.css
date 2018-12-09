@@ -1,0 +1,175 @@
+@CHARSET "UTF-8";
+
+@IMPORT url("../../../module/customer_page/customer_page.css");
+
+@IMPORT url("../../../module/customer_frame/customer_frame.css");
+
+@IMPORT url("../../my_account.css");
+
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	font-family: "新宋体";
+	background-color: #FFEFDE;
+}
+
+body>div {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+
+/** 同步返回的充值信息 */
+.page-middle>.page-content>.return-recharge-info {
+	line-height: 60px;
+	padding-top: 20px;
+	border: 0px solid #000000;
+}
+
+/** 同步返回的充值信息 消息 */
+.page-middle>.page-content>.return-recharge-info>.row.message{
+	line-height: 25px;
+	font-size: 14px;
+}
+
+/** 同步返回的充值信息 - 充值金额 */
+.page-middle>.page-content>.return-recharge-info>.row>.recharge-money>.label{
+	height: 40px;
+	line-height: 50px;
+	font-size: 20px;
+	color: blue;
+	border: 0px solid #000000;
+}
+
+/** 同步返回的充值信息 - 充值金额 */
+.page-middle>.page-content>.return-recharge-info>.row>.recharge-money>.value{
+	height: 40px;
+	line-height: 50px;
+	font-size: 20px;
+	font-style: italic;
+	color: black;
+	border: 0px solid #000000;
+}
+
+/** 同步返回的充值信息 - 充值结果 */
+.page-middle>.page-content>.return-recharge-info>.row>.recharge-result>.label{
+	height: 40px;
+	line-height: 50px;
+	font-size: 20px;
+	color: blue;
+	border: 0px solid #000000;
+}
+
+/** 同步返回的充值信息 - 充值结果 */
+.page-middle>.page-content>.return-recharge-info>.row>.recharge-result>.value{
+	height: 40px;
+	line-height: 50px;
+	font-size: 20px;
+	color: black;
+	border: 0px solid #000000;
+}
+
+/** 同步返回的充值信息 - 账户余额 */
+.page-middle>.page-content>.return-recharge-info>.row>.item.balance>.label {
+	height: 60px;
+	line-height: 70px;
+	font-size: 24px;
+	color: blue;
+	border: 0px solid #000000;
+}
+
+/** 同步返回的充值信息 - 账户余额 */
+.page-middle>.page-content>.return-recharge-info>.row>.item.balance>.value {
+	height: 60px;
+	line-height: 60px;
+	font-size: 48px;
+	font-style: italic;
+	color: red;
+	border: 0px solid #000000;
+}
+
+/** 同步返回的充值信息 - 冻结余额 */
+.page-middle>.page-content>.return-recharge-info>.row>.item.freezing-amount>.label
+	{
+	height: 60px;
+	line-height: 70px;
+	margin-left: 40px;
+	font-size: 14px;
+	color: blue;
+	font-weight: bold;
+	border: 0px solid #000000;
+}
+
+/** 同步返回的充值信息 - 冻结余额 */
+.page-middle>.page-content>.return-recharge-info>.row>.item.freezing-amount>.value
+	{
+	height: 60px;
+	line-height: 70px;
+	font-size: 14px;
+	color: red;
+	font-weight: bold;
+	border: 0px solid #000000;
+}
+
+/** 同步返回的充值信息 - 线性样式 */
+.page-middle>.page-content>.return-recharge-info>.row.line {
+	border-top: 2px dotted #000000;
+}
+
+/** 同步返回的充值信息 - 去充值 */
+.page-middle>.page-content>.return-recharge-info>.row>.item.to-recharge>.label
+	{
+	height: 60px;
+	line-height: 110px;
+	font-size: 14px;
+	color: black;
+	font-weight: bold;
+	border: 0px solid #000000;
+}
+
+/** 同步返回的充值信息 - 去充值 */
+.page-middle>.page-content>.return-recharge-info>.row>.item.to-recharge>a.link
+	{
+	width: 165px;
+	height: 68px;
+	padding: 4px;
+	background-image: url("images/to_recharge.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/** 同步返回的充值信息 - 去充值 */
+.page-middle>.page-content>.return-recharge-info>.row>.item.to-recharge>a.link:HOVER
+	{
+	padding: 3px;
+	border: 1px solid black;
+}
+
+
+/** 对话框：去充值录入金额 */
+.frm452345234524 .row>.label {
+	height: 28px;
+	line-height: 35px;
+}
+
+/** 对话框：去充值录入金额 */
+.frm452345234524 .row>.editable>input[type=text] {
+	width: 150px;
+	height: 28px;
+	line-height: 28px;
+	font-size: 16px;
+	color: red;
+	font-weight: bold;
+	border: 1px solid #000000;
+}
+
+/** 对话框：去充值录入金额 */
+.frm452345234524 .row>.readonly {
+	height: 28px;
+	line-height: 35px;
+}
+
+

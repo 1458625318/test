@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+
+.dialog-panel>.row>.label {
+	width: 100px;
+}
+
+.dialog-panel>.row>.editable>input[name=trueName]{
+	width: 120px;
+}
+
+.dialog-panel>.row>.editable>input[name=email]{
+	width: 120px;
+}
+
+.dialog-panel>.row>.editable>input[name=mobile]{
+	width: 120px;
+}
+
+.dialog-panel>.row>.editable>input[name=remark]{
+	width: 240px;
+}
+
+.dialog-panel>.row>.editable>input[name=age]{
+	width: 60px;
+}
+
+.dialog-panel>.row>.editable>input[name=sex]{
+	width: 60px;
+}
+
+.dialog-panel>.row>.editable>input[name=post]{
+	width: 100px;
+}
+
+.dialog-panel>.row>.editable>input[name=dept]{
+	width: 100px;
+}
+
+.dialog-panel>.row>.editable>input[name=address]{
+	width: 240px;
+}
+
+.dialog-panel>.row>.editable>input[name=idCard]{
+	width: 240px;
+}
+
+.dialog-panel>.row>.editable>input[name=origin]{
+	width: 100px;
+}
