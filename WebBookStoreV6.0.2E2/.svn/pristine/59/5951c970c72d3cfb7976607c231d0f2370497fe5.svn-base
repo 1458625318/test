@@ -1,0 +1,84 @@
+@CHARSET "UTF-8";
+
+.page-content>.unit.head-photo>iframe#uploadHeadPhotoTarget {
+	width: 200px;
+	height: 1px;
+	border: 0px solid #000000;
+}
+
+.page-content>.unit.head-photo>.row.head-photo {
+	padding: 10px;
+	width: 200px;
+	height: 200px;
+	overflow: auto;
+}
+
+.page-content>.unit.head-photo>.row.message {
+	position: static;
+	padding: 10px;
+	width: 200px;
+	line-height: 18px;
+	font-size: 12px;
+	display: none;
+	color: blue;
+}
+
+.page-content>.unit.head-photo>form.row {
+	position: static;
+	display: none;
+	padding: 10px;
+}
+
+.page-content>.unit.head-photo>form.row>input {
+	position: static;
+	float: left;
+	height: 28px;
+	background-color: #FFFFFF;
+	border: 1px solid #EFEFEF;
+	background-color: #FFFFFF;
+}
+
+.page-content>.unit.head-photo>form.row>button {
+	cursor: pointer;
+	position: static;
+	float: left;
+	margin-left: 2px;
+	display: block;
+	height: 30px;
+	color: #CCCCCC;
+	background-color: #FFFFFF;
+	border: 1px solid #EFEFEF;
+}
+
+.page-content>.unit.head-photo>form.row>button:HOVER {
+	color: #666666;
+	background-color: #EFEFEF;
+	border: 1px solid #CCCCCC;
+}
+
+.page-content>.unit.head-photo>.row.actions {
+	padding: 10px;
+}
+
+.page-content>.unit.head-photo>.row.actions>button.to-edit {
+	cursor: pointer;
+	position: static;
+	display: block;
+	width: 200px;
+	height: 30px;
+	color: #CCCCCC;
+	background-color: #FFFFFF;
+	border: 1px solid #EFEFEF;
+}
+
+.page-content>.unit.head-photo>.row.actions>button.to-edit:HOVER {
+	color: #666666;
+	background-color: #EFEFEF;
+	border: 1px solid #CCCCCC;
+}
+
+.page-content>.unit.user-info {
+	margin-left: 50px;
+}
+
+

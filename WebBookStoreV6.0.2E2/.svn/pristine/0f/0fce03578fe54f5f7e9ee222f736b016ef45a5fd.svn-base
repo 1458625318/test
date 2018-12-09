@@ -1,0 +1,150 @@
+@CHARSET "UTF-8";
+
+@IMPORT url("../module/admin_page/admin_page.css");
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	font-family: "新宋体";
+	background-color: #FFEFDE;
+}
+
+body>div {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.page-middle>form {
+	position: static;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 0px solid #000000;
+}
+
+.page-middle>form>.row {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.page-middle>form>.row>.login-icon {
+	width: 450px;
+	height: 240px;
+	background-image: url("images/login_icon.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-middle>form>.row>.label {
+	width: 60px;
+	height: 28px;
+}
+
+.page-middle>form>.row>.label.user-name {
+	background-image: url("images/login_title_user_name.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-middle>form>.row>.label.password {
+	background-image: url("images/login_title_password.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-middle>form>.row>.label.verify-code {
+	background-image: url("images/login_title_verify_code.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-middle>form>.row>.readonly {
+	height: 28px;
+	line-height: 28px;
+	font-size: 12px;
+}
+
+.page-middle>form>.row>.editable>input[type=text] {
+	width: 260px;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 4px;
+	border: 1px solid #FFC727;
+}
+
+.page-middle>form>.row>.editable>input[type=text][name=verifyCode] {
+	width: 160px;
+}
+
+.page-middle>form>.row>.editable>input[type=password] {
+	width: 260px;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 4px;
+	border: 1px solid #FFC727;
+}
+
+.page-middle>form>.row>.editable>input[type=image] {
+	width: 60px;
+	height: 24px;
+	padding-left: 4px;
+	border: 0px solid #FFC727;
+}
+
+.page-middle>form>.row>.readonly>a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.page-middle>form>.row>.readonly>a:HOVER {
+	color: #FF0000;
+}
+
+.page-middle>form>.row>.readonly>button {
+	cursor: pointer;
+	width: 88px;
+	height: 26px;
+	border: 0px solid #000000;
+}
+
+.page-middle>form>.row>.readonly>button[type=submit] {
+	background-image: url("images/login_btn_submit.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-middle>form>.row>.readonly>button[type=reset] {
+	background-image: url("images/login_btn_cancel.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-middle>form>.row>.readonly>a.register {
+	line-height: 36px;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: underline;
+}
+
+.page-middle>form>.row>.readonly>a.register:HOVER {
+	color: #FF0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

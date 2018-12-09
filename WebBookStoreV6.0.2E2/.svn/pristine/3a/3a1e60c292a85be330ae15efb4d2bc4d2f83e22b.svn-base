@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<!-- Log4j -->
+	<settings>
+		<setting name="logImpl" value="LOG4J" />
+	</settings>
+
+	<!-- 配置实体别名 -->
+	<typeAliases>
+		<typeAlias alias="advert" type="cn.jbit.webbs.entity.Advert" />
+		<typeAlias alias="advertAttachment" type="cn.jbit.webbs.entity.AdvertAttachment" />
+		<typeAlias alias="announcement" type="cn.jbit.webbs.entity.Announcement" />
+		<typeAlias alias="backupRecord" type="cn.jbit.webbs.entity.BackupRecord" />
+		<typeAlias alias="book" type="cn.jbit.webbs.entity.Book" />
+		<typeAlias alias="bookBargain" type="cn.jbit.webbs.entity.BookBargain" />
+		<typeAlias alias="bookBestseller" type="cn.jbit.webbs.entity.BookBestseller" />
+		<typeAlias alias="bookBestsellerSort" type="cn.jbit.webbs.entity.BookBestsellerSort" />
+		<typeAlias alias="bookBookClassification"
+			type="cn.jbit.webbs.entity.BookBookClassification" />
+		<typeAlias alias="bookClassification" type="cn.jbit.webbs.entity.BookClassification" />
+		<typeAlias alias="bookComment" type="cn.jbit.webbs.entity.BookComment" />
+		<typeAlias alias="bookCommentReply" type="cn.jbit.webbs.entity.BookCommentReply" />
+		<typeAlias alias="bookHomePage" type="cn.jbit.webbs.entity.BookHomePage" />
+		<typeAlias alias="bookKeywords" type="cn.jbit.webbs.entity.BookKeywords" />
+		<typeAlias alias="bookPicture" type="cn.jbit.webbs.entity.BookPicture" />
+		<typeAlias alias="bookSale" type="cn.jbit.webbs.entity.BookSale" />
+		<typeAlias alias="bookSalesDetail" type="cn.jbit.webbs.entity.BookSalesDetail" />
+		<typeAlias alias="bookTranslator" type="cn.jbit.webbs.entity.BookTranslator" />
+		<typeAlias alias="commentHot" type="cn.jbit.webbs.entity.CommentHot" />
+		<typeAlias alias="commentRecommend" type="cn.jbit.webbs.entity.CommentRecommend" />
+		<typeAlias alias="cooperationApply" type="cn.jbit.webbs.entity.CooperationApply" />
+		<typeAlias alias="customer" type="cn.jbit.webbs.entity.Customer" />
+		<typeAlias alias="customerAddress" type="cn.jbit.webbs.entity.CustomerAddress" />
+		<typeAlias alias="department" type="cn.jbit.webbs.entity.Department" />
+		<typeAlias alias="employee" type="cn.jbit.webbs.entity.Employee" />
+		<typeAlias alias="leaveMessage" type="cn.jbit.webbs.entity.LeaveMessage" />
+		<typeAlias alias="registerPassword" type="cn.jbit.webbs.entity.RegisterPassword" />
+		<typeAlias alias="saleOrder" type="cn.jbit.webbs.entity.SaleOrder" />
+		<typeAlias alias="saleOrderDetail" type="cn.jbit.webbs.entity.SaleOrderDetail" />
+		<typeAlias alias="staticContent" type="cn.jbit.webbs.entity.StaticContent" />
+		<typeAlias alias="staticContentAttachment"
+			type="cn.jbit.webbs.entity.StaticContentAttachment" />
+		<typeAlias alias="sysAuthority" type="cn.jbit.webbs.entity.SysAuthority" />
+		<typeAlias alias="sysMenuOption" type="cn.jbit.webbs.entity.SysMenuOption" />
+		<typeAlias alias="sysRole" type="cn.jbit.webbs.entity.SysRole" />
+		<typeAlias alias="sysRoleAuthority" type="cn.jbit.webbs.entity.SysRoleAuthority" />
+		<typeAlias alias="sysUser" type="cn.jbit.webbs.entity.SysUser" />
+		<typeAlias alias="sysUserGroup" type="cn.jbit.webbs.entity.SysUserGroup" />
+		<typeAlias alias="sysUserGroupRole" type="cn.jbit.webbs.entity.SysUserGroupRole" />
+		<typeAlias alias="sysUserUserGroup" type="cn.jbit.webbs.entity.SysUserUserGroup" />
+		<typeAlias alias="userEnableRecord" type="cn.jbit.webbs.entity.UserEnableRecord" />
+		<typeAlias alias="verifyCode" type="cn.jbit.webbs.entity.VerifyCode" />
+	</typeAliases>
+
+</configuration>

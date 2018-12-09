@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+@IMPORT url("../../../module/customer_page/customer_page.css");
+
+@IMPORT url("../../../module/customer_frame/customer_frame.css");
+
+@IMPORT url("../../my_order.css");
+
+.page-middle>.page-content>.row.order-list>.form-panel.query.query-order>.content>.unit>.field>input[name=code]
+	{
+	width: 180px;
+}
+
+.page-middle>.page-content>.row.order-list>.form-panel.query.query-order>.content>.unit>.field>input[name=status]
+	{
+	width: 80px;
+}
+
+.page-middle>.page-content>.row.order-list>.form-panel.query.query-order>.content>.unit>.field>input[name=productCode]
+	{
+	width: 150px;
+}
+
+.page-middle>.page-content>.row.order-list>.form-panel.query.query-order>.content>.unit>.field>input[name=product]
+	{
+	width: 170px;
+}
+
+.page-middle>.page-content>.row.order-list>.form-panel.query.query-order>.content>.unit>.field>input[name=submitTime1]
+	{
+	width: 90px;
+}
+
+.page-middle>.page-content>.row.order-list>.form-panel.query.query-order>.content>.unit>.field>input[name=submitTime2]
+	{
+	width: 90px;
+}
+
+

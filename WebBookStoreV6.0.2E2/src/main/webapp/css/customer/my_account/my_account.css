@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+
+.page-middle>.page-content>.tab-group>.tab {
+	background-color: #FFFFFF;
+}
+
+.page-middle>.page-content>.tab-group>.tab.account {
+	background-image: url("images/account.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-middle>.page-content>.tab-group>.tab.account:HOVER {
+	background-image: url("images/account1.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-middle>.page-content>.tab-group>.tab.account.current {
+	background-image: url("images/account1.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-middle>.page-content>.tab-group>.tab.withdrawals {
+	background-image: url("images/withdrawals.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-middle>.page-content>.tab-group>.tab.withdrawals:HOVER {
+	background-image: url("images/withdrawals1.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-middle>.page-content>.tab-group>.tab.withdrawals.current {
+	background-image: url("images/withdrawals1.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-middle>.page-content>.tab-group>.tab.my_points {
+	background-image: url("images/my_points.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-middle>.page-content>.tab-group>.tab.my_points:HOVER {
+	background-image: url("images/my_points1.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-middle>.page-content>.tab-group>.tab.my_points.current {
+	background-image: url("images/my_points1.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}

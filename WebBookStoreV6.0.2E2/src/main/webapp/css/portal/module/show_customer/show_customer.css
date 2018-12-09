@@ -1,0 +1,187 @@
+@CHARSET "UTF-8";
+
+
+.customer-info {
+	font-size: 12px;
+	line-height: 22px;
+	color: #DFA508;
+}
+
+.customer-info>.unit {
+	height: 36px;
+	line-height: 36px;
+	overflow: hidden;
+}
+
+.customer-info>.my-info {
+	font-size: 12px;
+}
+
+.customer-info>.my-info>.item {
+	
+}
+
+.customer-info>.my-info>.welcome {
+	padding-left: 50px;
+	color: #DFA508;
+}
+
+.customer-info>.my-info>.true-name {
+	color: #EE6014;
+}
+
+.customer-info>.my-info>.level {
+	width: 65px;
+}
+
+.customer-info>.my-info>.level>.star {
+	height: 36px;
+	background-image: url("images/star.png");
+	background-position: left center;
+	background-repeat: repeat-x;
+}
+
+.customer-info>.my-info>.extend {
+	cursor: pointer;
+	width: 20px;
+	height: 36px;
+	background-image: url("images/arrow.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.customer-info>.exit {
+	
+}
+
+.customer-info>.exit>.item {
+	height: 36px;
+}
+
+.customer-info>.exit>a.item {
+	
+}
+
+.customer-info>.exit>.item+.item {
+	margin-left: 2px;
+}
+
+.customer-info>.exit>.icon {
+	cursor: pointer;
+	width: 28px;
+	background-image: url("images/icon_exit.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.customer-info>.exit>.text {
+	color: #666666;
+	font-size: 12px;
+}
+
+.customer-info>.exit>a.text.item {
+	
+}
+
+.customer-info>.exit>a.text.item:HOVER {
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+.customer-info>.customer-platform {
+	height: 36px;
+	margin-right: 15px;
+}
+
+.customer-info>.customer-platform>ul {
+	height: 36px;
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.customer-info>.customer-platform>ul>li {
+	float: left;
+	padding-left: 24px;
+}
+
+.customer-info>.customer-platform>ul>li+li {
+	margin-left: 10px;
+}
+
+.customer-info>.customer-platform>ul>li.my-address {
+	background-image: url("images/my_address.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.customer-info>.customer-platform>ul>li.my-account {
+	background-image: url("images/my_account.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.customer-info>.customer-platform>ul>li.my-books {
+	background-image: url("images/my_books.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.customer-info>.customer-platform>ul>li.my-order {
+	background-image: url("images/my_order.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.customer-info>.customer-platform>ul>li.my-comment {
+	background-image: url("images/my_comment.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.customer-info>.customer-platform>ul>li>.item {
+	
+}
+
+.customer-info>.customer-platform>ul>li>.item+.item {
+	margin-left: 2px;
+}
+
+.customer-info>.customer-platform>ul>li>.text {
+	color: #DFA508;
+	font-size: 12px;
+}
+
+.customer-info>.customer-platform>ul>li>a.text.item {
+	
+}
+
+.customer-info>.customer-platform>ul>li>a.text.item:HOVER {
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+.customer-info>.customer-platform>ul>li>.extend {
+	cursor: pointer;
+	width: 20px;
+	height: 36px;
+	background-image: url("images/arrow.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

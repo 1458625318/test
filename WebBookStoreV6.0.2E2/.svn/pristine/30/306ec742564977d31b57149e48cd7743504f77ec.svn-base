@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias alias="user" type="cn.jbit.webbs.entity.SysUser" />
+        <typeAlias alias="userUserGroup" type="cn.jbit.webbs.entity.SysUserUserGroup" />
+        <typeAlias alias="userGroup" type="cn.jbit.webbs.entity.SysUserGroup" />
+        <typeAlias alias="userGroupRole" type="cn.jbit.webbs.entity.SysUserGroupRole" />
+        <typeAlias alias="role" type="cn.jbit.webbs.entity.SysRole" />
+        <typeAlias alias="roleAuthority" type="cn.jbit.webbs.entity.SysRoleAuthority" />
+        <typeAlias alias="authority" type="cn.jbit.webbs.entity.SysAuthority" />
+        <typeAlias alias="menuOption" type="cn.jbit.webbs.entity.SysMenuOption" />
+        <typeAlias alias="customer" type="cn.jbit.webbs.entity.Customer" />
+        <typeAlias alias="verifyCode" type="cn.jbit.webbs.entity.VerifyCode" />
+        <typeAlias alias="userEnableRecord" type="cn.jbit.webbs.entity.UserEnableRecord" />
+        <typeAlias alias="employee" type="cn.jbit.webbs.entity.Employee" />
+        <typeAlias alias="registerPassword" type="cn.jbit.webbs.entity.RegisterPassword" />
+        <typeAlias alias="department" type="cn.jbit.webbs.entity.Department" />
+        <typeAlias alias="customerAddress" type="cn.jbit.webbs.entity.CustomerAddress" />
+        <typeAlias alias="saleOrder" type="cn.jbit.webbs.entity.SaleOrder" />
+        <typeAlias alias="saleOrderDetail" type="cn.jbit.webbs.entity.SaleOrderDetail" />
+        <typeAlias alias="book" type="cn.jbit.webbs.entity.Book" />
+        <typeAlias alias="bookPicture" type="cn.jbit.webbs.entity.BookPicture" />
+        <typeAlias alias="bookBookClassification" type="cn.jbit.webbs.entity.BookBookClassification" />
+        <typeAlias alias="bookClassification" type="cn.jbit.webbs.entity.BookClassification" />
+        <typeAlias alias="bookKeywords" type="cn.jbit.webbs.entity.BookKeywords" />
+        <typeAlias alias="bookTranslator" type="cn.jbit.webbs.entity.BookTranslator" />
+        <typeAlias alias="bookHomePage" type="cn.jbit.webbs.entity.BookHomePage" />
+        <typeAlias alias="bookBargain" type="cn.jbit.webbs.entity.BookBargain" />
+        <typeAlias alias="bookSale" type="cn.jbit.webbs.entity.BookSale" />
+        <typeAlias alias="bookSalesDetail" type="cn.jbit.webbs.entity.BookSalesDetail" />
+        <typeAlias alias="bookBestsellerSort" type="cn.jbit.webbs.entity.BookBestsellerSort" />
+        <typeAlias alias="bookBestseller" type="cn.jbit.webbs.entity.BookBestseller" />
+        <typeAlias alias="bookComment" type="cn.jbit.webbs.entity.BookComment" />
+        <typeAlias alias="bookCommentReply" type="cn.jbit.webbs.entity.BookCommentReply" />
+        <typeAlias alias="announcement" type="cn.jbit.webbs.entity.Announcement" />
+        <typeAlias alias="advert" type="cn.jbit.webbs.entity.Advert" />
+        <typeAlias alias="advertAttachment" type="cn.jbit.webbs.entity.AdvertAttachment" />
+        <typeAlias alias="staticContent" type="cn.jbit.webbs.entity.StaticContent" />
+        <typeAlias alias="staticContentAttachment" type="cn.jbit.webbs.entity.StaticContentAttachment" />
+        <typeAlias alias="leaveMessage" type="cn.jbit.webbs.entity.LeaveMessage" />
+        <typeAlias alias="cooperationApply" type="cn.jbit.webbs.entity.CooperationApply" />
+        <typeAlias alias="backupRecord" type="cn.jbit.webbs.entity.BackupRecord" />
+        <typeAlias alias="commentRecommend" type="cn.jbit.webbs.entity.CommentRecommend" />
+        <typeAlias alias="commentHot" type="cn.jbit.webbs.entity.CommentHot" />
+    </typeAliases>
+    <mappers>
+        <resultMap id="userResult" type="cn.jbit.webbs.entity.SysUser">
+            <result property="id" column="id" />
+            <result property="userName" column="user_name" />
+            <result property="password" column="password" />
+            <result property="trueName" column="true_name" />
+            <result property="email" column="email" />
+            <result property="mobile" column="mobile" />
+            <result property="enable" column="enable" />
+            <result property="userType" column="user_type" />
+            <result property="priorLoginTime" column="prior_login_time" />
+            <result property="lastLoginTime" column="last_login_time" />
+            <result property="totalLogin" column="total_login" />
+            <result property="createTime" column="create_time" />
+            <result property="remark" column="remark" />
+        </resultMap>
+        <resultMap id="userUserGroupResult" type="cn.jbit.webbs.entity.SysUserUserGroup">
+            <result property="id" column="id" />
+            <result property="userId" column="user_id" />
+            <result property="userGroupId" column="user_group_id" />
+        </resultMap>
+        <resultMap id="userGroupResult" type="cn.jbit.webbs.entity.SysUserGroup">
+            <result property="id" column="id" />
+            <result property="title" column="title" />
+            <result property="remark" column="remark" />
+        </resultMap>
+        <resultMap id="userGroupRoleResult" type="cn.jbit.webbs.entity.SysUserGroupRole">
+            <result property="id" column="id" />
+            <result property="userGroupId" column="user_group_id" />
+            <result property="roleId" column="role_id" />
+        </resultMap>
+        <resultMap id="roleResult" type="cn.jbit.webbs.entity.SysRole">
+            <result property="id" column="id" />
+            <result property="signCode" column="sign_code" />
+            <result property="title" column="title" />
+            <result property="remark" column="remark" />
+        </resultMap>
+        <resultMap id="roleAuthorityResult" type="cn.jbit.webbs.entity.SysRoleAuthority">
+            <result property="id" column="id" />
+            <result property="roleId" column="role_id" />
+            <result property="authorityId" column="authority_id" />
+        </resultMap>
+        <resultMap id="authorityResult" type="cn.jbit.webbs.entity.SysAuthority">
+            <result property="id" column="id" />
+            <result property="title" column="title" />
+            <result property="code" column="code" />
+            <result property="authorityGroupId" column="authority_group_id" />
+            <result property="authorityGroup" column="authority_group" />
+            <result property="entryUrl" column="entry_url" />
+            <result property="remark" column="remark" />
+        </resultMap>
+        <resultMap id="menuOptionResult" type="cn.jbit.webbs.entity.SysMenuOption">
+            <result property="id" column="id" />
+            <result property="code" column="code" />
+            <result property="innerCode" column="inner_code" />
+            <result property="title" column="title" />
+            <result property="superId" column="super_id" />
+            <result property="superTitle" column="super_title" />
+            <result property="depth" column="depth" />
+            <result property="url" column="url" />
+            <result property="isBandAuthority" column="is_band_authority" />
+            <result property="authorityId" column="authority_id" />
+            <result property="authorityCode" column="authority_code" />
+            <result property="authority" column="authority" />
+            <result property="remark" column="remark" />
+        </resultMap>
+        <resultMap id="customerResult" type="cn.jbit.webbs.entity.Customer">
+            <result property="id" column="id" />
+            <result property="userId" column="user_id" />
+            <result property="userName" column="user_name" />
+            <result property="trueName" column="true_name" />
+            <result property="accountId" column="account_id" />
+            <result property="accountName" column="account_name" />
+            <result property="level" column="level" />
+            <result property="email" column="email" />
+            <result property="isValidateEmail" column="is_validate_email" />
+            <result property="mobile" column="mobile" />
+            <result property="isValidateMobile" column="is_validate_mobile" />
+            <result property="sex" column="sex" />
+            <result property="age" column="age" />
+            <result property="headPhoto" column="head_photo" />
+            <result property="address" column="address" />
+            <result property="idCard" column="id_card" />
+            <result property="remark" column="remark" />
+            <result property="createTime" column="create_time" />
+        </resultMap>
+        <resultMap id="verifyCodeResult" type="cn.jbit.webbs.entity.VerifyCode">
+            <result property="id" column="id" />
+            <result property="code" column="code" />
+            <result property="sort" column="sort" />
+            <result property="email" column="email" />
+            <result property="mobile" column="mobile" />
+            <result property="sessionId" column="session_id" />
+            <result property="customerId" column="customer_id" />
+            <result property="customer" column="customer" />
+            <result property="actionPlace" column="action_place" />
+            <result property="begingTime" column="beging_time" />
+            <result property="endTime" column="end_time" />
+            <result property="validateLength" column="validate_length" />
+            <result property="isVerify" column="is_verify" />
+            <result property="verifyTime" column="verify_time" />
+            <result property="createTime" column="create_time" />
+            <result property="remark" column="remark" />
+        </resultMap>
+        <resultMap id="userEnableRecordResult" type="cn.jbit.webbs.entity.UserEnableRecord">
+            <result property="id" column="id" />
+            <result property="userId" column="user_id" />
+            <result property="userName" column="user_name" />
+            <result property="trueName" column="true_name" />
+            <result property="email" column="email" />
+            <result property="mobile" column="mobile" />
+            <result property="enableType" column="enable_type" />
+            <result property="code" column="code" />
+            <result property="isEnable" column="is_enable" />
+            <result property="enableTime" column="enable_time" />
+            <result property="loseTime" column="lose_time" />
+            <result property="createTime" column="create_time" />
+            <result property="isValid" column="is_valid" />
+            <result property="invalidDate" column="invalid_date" />
+        </resultMap>
+        <resultMap id="employeeResult" type="cn.jbit.webbs.entity.Employee">
+            <result property="id" column="id" />
+            <result property="userId" column="user_id" />
+            <result property="userName" column="user_name" />
+            <result property="trueName" column="true_name" />
+            <result property="age" column="age" />
+            <result property="sex" column="sex" />
+            <result property="post" column="post" />
+            <result property="dept" column="dept" />
+            <result property="email" column="email" />
+            <result property="phone" column="phone" />
+            <result property="address" column="address" />
+            <result property="headPhoto" column="head_photo" />
+            <result property="entryTime" column="entry_time" />
+            <result property="education" column="education" />
+            <result property="idCard" column="id_card" />
+            <result property="origin" column="origin" />
+            <result property="remark" column="remark" />
+            <result property="createMan" column="create_man" />
+            <result property="createTime" column="create_time" />
+        </resultMap>
+        <resultMap id="registerPasswordResult" type="cn.jbit.webbs.entity.RegisterPassword">
+            <result property="id" column="id" />
+            <result property="title" column="title" />
+            <result property="password" column="password" />
+            <result property="dept" column="dept" />
+            <result property="post" column="post" />
+            <result property="enable" column="enable" />
+            <result property="empStatus" column="emp_status" />
+            <result property="entryTime" column="entry_time" />
+            <result property="expirationDate" column="expiration_date" />
+            <result property="createTime" column="create_time" />
+            <result property="remark" column="remark" />
+        </resultMap>
+        <resultMap id="departmentResult" type="cn.jbit.webbs.entity.Department">
+            <result property="id" column="id" />
+            <result property="title" column="title" />
+            <result property="superTitle" column="super_title" />
+            <result property="remark" column="remark" />
+        </resultMap>
+        <resultMap id="customerAddressResult" type="cn.jbit.webbs.entity.CustomerAddress">
+            <result property="id" column="id" />
+            <result property="title" column="title" />
+            <result property="userId" column="user_id" />
+            <result property="userName" column="user_name" />
+            <result property="trueName" column="true_name" />
+            <result property="consignee" column="consignee" />
+            <result property="mobile" column="mobile" />
+            <result property="province" column="province" />
+            <result property="city" column="city" />
+            <result property="area" column="area" />
+            <result property="address" column="address" />
+            <result property="postCode" column="post_code" />
+            <result property="isDefault" column="is_default" />
+            <result property="remark" column="remark" />
+            <result property="createTime" column="create_time" />
+        </resultMap>
+        <resultMap id="saleOrderResult" type="cn.jbit.webbs.entity.SaleOrder">
+            <result property="id" column="id" />
+            <result property="code" column="code" />
+            <result property="userId" column="user_id" />
+            <result property="userName" column="user_name" />
+            <result property="trueName" column="true_name" />
+            <result property="mobile" column="mobile" />
+            <result property="address" column="address" />
+            <result property="postCode" column="post_code" />
+            <result property="status" column="status" />
+            <result property="customerRemark" column="customer_remark" />
+            <result property="sellerRemark" column="seller_remark" />
+            <result property="totalAmount" column="total_amount" />
+            <result property="submitTime" column="submit_time" />
+            <result property="payTime" column="pay_time" />
+            <result property="consignerEmpId" column="consigner_emp_id" />
+            <result property="consignerUserId" column="consigner_user_id" />
+            <result property="consignerUserName" column="consigner_user_name" />
+            <result property="consigner" column="consigner" />
+            <result property="consignTime" column="consign_time" />
+            <result property="finishEmpId" column="finish_emp_id" />
+            <result property="finishUserId" column="finish_user_id" />
+            <result property="finishUserName" column="finish_user_name" />
+            <result property="finishTrueName" column="finish_true_name" />
+            <result property="finishTime" column="finish_time" />
+            <result property="cancelReason" column="cancel_reason" />
+            <result property="cancelEmpId" column="cancel_emp_id" />
+            <result property="cancelUserId" column="cancel_user_id" />
+            <result property="cancelUserName" column="cancel_user_name" />
+            <result property="cancelTrueName" column="cancel_true_name" />
+            <result property="cancelTime" column="cancel_time" />
+        </resultMap>
+        <resultMap id="saleOrderDetailResult" type="cn.jbit.webbs.entity.SaleOrderDetail">
+            <result property="id" column="id" />
+            <result property="orderId" column="order_id" />
+            <result property="orderCode" column="order_code" />
+            <result property="productId" column="product_id" />
+            <result property="productCode" column="product_code" />
+            <result property="product" column="product" />
+            <result property="isSale" column="is_sale" />
+            <result property="saleUnit" column="sale_unit" />
+            <result property="originalCost" column="original_cost" />
+            <result property="discountRatio" column="discount_ratio" />
+            <result property="price" column="price" />
+            <result property="number" column="number" />
+            <result property="subtotal" column="subtotal" />
+        </resultMap>
+        <resultMap id="bookResult" type="cn.jbit.webbs.entity.Book">
+            <result property="id" column="id" />
+            <result property="title" column="title" />
+            <result property="author" column="author" />
+            <result property="seriesOfBook" column="series_of_book" />
+            <result property="press" column="press" />
+            <result property="isbn" column="isbn" />
+            <result property="registerDate" column="register_date" />
+            <result property="publicationDate" column="publication_date" />
+            <result property="bookSize" column="book_size" />
+            <result property="pageNumber" column="page_number" />
+            <result property="edition" column="edition" />
+            <result property="recommendBook" column="recommend_book" />
+            <result property="bookDescription" column="book_description" />
+            <result property="translator" column="translator" />
+            <result property="directory" column="directory" />
+            <result property="foreword" column="foreword" />
+            <result property="preface" column="preface" />
+            <result property="originalCost" column="original_cost" />
+            <result property="discountRatio" column="discount_ratio" />
+            <result property="isOnSelf" column="is_on_self" />
+            <result property="isSalesPromotion" column="is_sales_promotion" />
+            <result property="quarterSalesColume" column="quarter_sales_colume" />
+            <result property="starLevel" column="star_level" />
+            <result property="reviewTotalNumber" column="review_total_number" />
+            <result property="totalInventory" column="total_inventory" />
+            <result property="firstClassify" column="first_classify" />
+            <result property="secondClassify" column="second_classify" />
+            <result property="thirdClassify" column="third_classify" />
+            <result property="fourthClassify" column="fourth_classify" />
+            <result property="remark" column="remark" />
+        </resultMap>
+        <resultMap id="bookPictureResult" type="cn.jbit.webbs.entity.BookPicture">
+            <result property="id" column="id" />
+            <result property="title" column="title" />
+            <result property="bookId" column="book_id" />
+            <result property="book" column="book" />
+            <result property="picFile" column="pic_file" />
+            <result property="isDefault" column="is_default" />
+        </resultMap>
+        <resultMap id="bookBookClassificationResult" type="cn.jbit.webbs.entity.BookBookClassification">
+            <result property="id" column="id" />
+            <result property="bookId" column="book_id" />
+            <result property="book" column="book" />
+            <result property="classify" column="classify" />
+            <result property="classifyRank" column="classify_rank" />
+            <result property="superiorClassify" column="superior_classify" />
+        </resultMap>
+        <resultMap id="bookClassificationResult" type="cn.jbit.webbs.entity.BookClassification">
+            <result property="id" column="id" />
+            <result property="classify" column="classify" />
+            <result property="superiorClassify" column="superior_classify" />
+            <result property="classifyRank" column="classify_rank" />
+        </resultMap>
+        <resultMap id="bookKeywordsResult" type="cn.jbit.webbs.entity.BookKeywords">
+            <result property="id" column="id" />
+            <result property="bookId" column="book_id" />
+            <result property="book" column="book" />
+            <result property="keywords" column="keywords" />
+        </resultMap>
+        <resultMap id="bookTranslatorResult" type="cn.jbit.webbs.entity.BookTranslator">
+            <result property="id" column="id" />
+            <result property="bookId" column="book_id" />
+            <result property="book" column="book" />
+            <result property="author" column="author" />
+            <result property="individualResume" column="individual_resume" />
+        </resultMap>
+        <resultMap id="bookHomePageResult" type="cn.jbit.webbs.entity.BookHomePage">
+            <result property="id" column="id" />
+            <result property="bookId" column="book_id" />
+            <result property="book" column="book" />
+            <result property="recommendType" column="recommend_type" />
+        </resultMap>
+        <resultMap id="bookBargainResult" type="cn.jbit.webbs.entity.BookBargain">
+            <result property="id" column="id" />
+            <result property="bookId" column="book_id" />
+            <result property="book" column="book" />
+            <result property="classify" column="classify" />
+            <result property="orderIndex" column="order_index" />
+        </resultMap>
+        <resultMap id="bookSaleResult" type="cn.jbit.webbs.entity.BookSale">
+            <result property="id" column="id" />
+            <result property="bookId" column="book_id" />
+            <result property="book" column="book" />
+            <result property="salesPromotionIntegral" column="sales_promotion_integral" />
+            <result property="salesPromotionPrice" column="sales_promotion_price" />
+            <result property="salesPromotionRemark" column="sales_promotion_remark" />
+        </resultMap>
+        <resultMap id="bookSalesDetailResult" type="cn.jbit.webbs.entity.BookSalesDetail">
+            <result property="id" column="id" />
+            <result property="salesPromotionId" column="sales_promotion_id" />
+            <result property="title" column="title" />
+            <result property="num" column="num" />
+            <result property="price" column="price" />
+            <result property="remark" column="remark" />
+        </resultMap>
+        <resultMap id="bookBestsellerSortResult" type="cn.jbit.webbs.entity.BookBestsellerSort">
+            <result property="id" column="id" />
+            <result property="classify" column="classify" />
+        </resultMap>
+        <resultMap id="bookBestsellerResult" type="cn.jbit.webbs.entity.BookBestseller">
+            <result property="id" column="id" />
+            <result property="bookId" column="book_id" />
+            <result property="book" column="book" />
+            <result property="classify" column="classify" />
+        </resultMap>
+        <resultMap id="bookCommentResult" type="cn.jbit.webbs.entity.BookComment">
+            <result property="id" column="id" />
+            <result property="bookId" column="book_id" />
+            <result property="book" column="book" />
+            <result property="title" column="title" />
+            <result property="content" column="content" />
+            <result property="commentTime" column="comment_time" />
+            <result property="starRank" column="star_rank" />
+            <result property="sysUserId" column="sys_user_id" />
+            <result property="customerId" column="customer_id" />
+            <result property="sysUserName" column="sys_user_name" />
+            <result property="trueName" column="true_name" />
+            <result property="level" column="level" />
+            <result property="isBuyer" column="is_buyer" />
+            <result property="buyingTime" column="buying_time" />
+            <result property="usefulNumber" column="useful_number" />
+            <result property="uselessNumber" column="useless_number" />
+            <result property="isShow" column="is_show" />
+        </resultMap>
+        <resultMap id="bookCommentReplyResult" type="cn.jbit.webbs.entity.BookCommentReply">
+            <result property="id" column="id" />
+            <result property="bookCommentId" column="book_comment_id" />
+            <result property="replyContent" column="reply_content" />
+            <result property="replyTime" column="reply_time" />
+            <result property="sysUserId" column="sys_user_id" />
+            <result property="customerId" column="customer_id" />
+            <result property="userName" column="user_name" />
+            <result property="trueName" column="true_name" />
+            <result property="level" column="level" />
+            <result property="isShow" column="is_show" />
+        </resultMap>
+        <resultMap id="announcementResult" type="cn.jbit.webbs.entity.Announcement">
+            <result property="id" column="id" />
+            <result property="content" column="content" />
+            <result property="beginTime" column="begin_time" />
+            <result property="endTime" column="end_time" />
+            <result property="isPublish" column="is_publish" />
+            <result property="publisher" column="publisher" />
+            <result property="publishTime" column="publish_time" />
+            <result property="submitMan" column="submit_man" />
+            <result property="submitTime" column="submit_time" />
+        </resultMap>
+        <resultMap id="advertResult" type="cn.jbit.webbs.entity.Advert">
+            <result property="id" column="id" />
+            <result property="sort" column="sort" />
+            <result property="title" column="title" />
+            <result property="contentFile" column="content_file" />
+            <result property="beginTime" column="begin_time" />
+            <result property="endTime" column="end_time" />
+            <result property="isPublish" column="is_publish" />
+            <result property="publisher" column="publisher" />
+            <result property="publishTime" column="publish_time" />
+            <result property="submitMan" column="submit_man" />
+            <result property="submitTime" column="submit_time" />
+        </resultMap>
+        <resultMap id="advertAttachmentResult" type="cn.jbit.webbs.entity.AdvertAttachment">
+            <result property="id" column="id" />
+            <result property="advertId" column="advert_id" />
+            <result property="title" column="title" />
+            <result property="contentType" column="content_type" />
+            <result property="contentFile" column="content_file" />
+            <result property="url" column="url" />
+        </resultMap>
+        <resultMap id="staticContentResult" type="cn.jbit.webbs.entity.StaticContent">
+            <result property="id" column="id" />
+            <result property="title" column="title" />
+            <result property="sort" column="sort" />
+            <result property="contentFile" column="content_file" />
+            <result property="isPublish" column="is_publish" />
+            <result property="publisher" column="publisher" />
+            <result property="publishTime" column="publish_time" />
+            <result property="submitMan" column="submit_man" />
+            <result property="submitTime" column="submit_time" />
+        </resultMap>
+        <resultMap id="staticContentAttachmentResult" type="cn.jbit.webbs.entity.StaticContentAttachment">
+            <result property="id" column="id" />
+            <result property="staticContentId" column="static_content_id" />
+            <result property="title" column="title" />
+            <result property="contentType" column="content_type" />
+            <result property="contentFile" column="content_file" />
+            <result property="url" column="url" />
+        </resultMap>
+        <resultMap id="leaveMessageResult" type="cn.jbit.webbs.entity.LeaveMessage">
+            <result property="id" column="id" />
+            <result property="title" column="title" />
+            <result property="sort" column="sort" />
+            <result property="content" column="content" />
+            <result property="submitTime" column="submit_time" />
+            <result property="name" column="name" />
+            <result property="mobile" column="mobile" />
+            <result property="email" column="email" />
+            <result property="address" column="address" />
+            <result property="isShow" column="is_show" />
+            <result property="isDispose" column="is_dispose" />
+            <result property="disposeEmpId" column="dispose_emp_id" />
+            <result property="disposeUserId" column="dispose_user_id" />
+            <result property="disposeUserName" column="dispose_user_name" />
+            <result property="disposeMan" column="dispose_man" />
+            <result property="disposeTime" column="dispose_time" />
+        </resultMap>
+        <resultMap id="cooperationApplyResult" type="cn.jbit.webbs.entity.CooperationApply">
+            <result property="id" column="id" />
+            <result property="content" column="content" />
+            <result property="trueName" column="true_name" />
+            <result property="mobile" column="mobile" />
+            <result property="email" column="email" />
+            <result property="city" column="city" />
+            <result property="address" column="address" />
+            <result property="isDispose" column="is_dispose" />
+            <result property="disposeEmpId" column="dispose_emp_id" />
+            <result property="disposeUserId" column="dispose_user_id" />
+            <result property="disposeUserName" column="dispose_user_name" />
+            <result property="disposeMan" column="dispose_man" />
+            <result property="disposeTime" column="dispose_time" />
+        </resultMap>
+        <resultMap id="backupRecordResult" type="cn.jbit.webbs.entity.BackupRecord">
+            <result property="id" column="id" />
+            <result property="backupType" column="backup_type" />
+            <result property="backupStartTime" column="backup_start_time" />
+            <result property="backupEndTime" column="backup_end_time" />
+            <result property="backupLength" column="backup_length" />
+            <result property="attachment" column="attachment" />
+            <result property="createTime" column="create_time" />
+            <result property="remark" column="remark" />
+        </resultMap>
+        <resultMap id="commentRecommendResult" type="cn.jbit.webbs.entity.CommentRecommend">
+            <result property="id" column="id" />
+            <result property="bookId" column="book_id" />
+            <result property="book" column="book" />
+            <result property="commentId" column="comment_id" />
+            <result property="orderIndex" column="order_index" />
+        </resultMap>
+        <resultMap id="commentHotResult" type="cn.jbit.webbs.entity.CommentHot">
+            <result property="id" column="id" />
+            <result property="bookId" column="book_id" />
+            <result property="book" column="book" />
+            <result property="commentId" column="comment_id" />
+        </resultMap>
+    </mappers>
+</configuration>
